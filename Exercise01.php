@@ -37,7 +37,7 @@
             $media = array_sum($numbers);
             $count = count($numbers);
             $avg = $media / $count;
-            echo $avg;
+       
         }
         if (isset($_POST['reset'])) {
             session_unset();
@@ -70,6 +70,7 @@
     echo "<br>";
     echo "<br>";
     echo "Current Array: " . implode(", ", $numbers) . "<br><br>";
+    if (isset($avg)) { echo "Average: " . $avg ; }
 
     ?>
 </body>
