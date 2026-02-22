@@ -31,6 +31,7 @@
             } else if ($position == 3) {
                 $numbers[2] = $newValue;
             }
+            $_SESSION['numbers'] = $numbers;
         }
         if (isset($_POST['avg'])) {
 
